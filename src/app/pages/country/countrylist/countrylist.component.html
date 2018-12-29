@@ -1,0 +1,29 @@
+<h3>Country List</h3>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Country Id</th>
+        <th>Country Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor='let c of list'>
+     <tr>
+        <td>{{c.countryId}}</td>
+        <td>{{c.countryName}}</td>
+        <td>
+          <a [routerLink]='["/country/edit",c.countryId]' class="btn btn-primary">Edit</a>
+        </td>
+
+     </tr>
+    </tbody>
+  </table>
+
+
+  <ul>
+    <li *ngFor='let c of listdata'>
+        {{c.name}} - {{c.region}}
+    </li>
+  </ul>

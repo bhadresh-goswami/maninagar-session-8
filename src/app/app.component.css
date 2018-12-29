@@ -1,0 +1,14 @@
+/* input.ng-invalid{
+    border: 1px outset red;
+    display: inline-block;
+}
+input.ng-valid{
+
+    border: 1px outset green;
+    display: inline-block;
+} */
+
+.hide
+{
+    display: none;
+}
